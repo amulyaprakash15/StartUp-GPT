@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StartUpGPT - AI Startup Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 StartUpGPT</h1>
+    <p>Enter your startup idea to generate a full pitch, model, and valuation.</p>
+    <form action="/generate" method="POST">
+      <textarea name="idea" placeholder="Enter your startup idea here..." required></textarea>
+      <button type="submit">Generate Startup Plan</button>
+    </form>
+  </div>
+</body>
+</html>

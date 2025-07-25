@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StartupGPT Results</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(12px);
+      padding: 30px;
+      color: #1a1a1a;
+      animation: fadeIn 0.7s ease;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 1.4em;
+      color: #34495e;
+      border-left: 5px solid #2c3e50;
+      padding-left: 10px;
+    }
+
+    pre {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 15px;
+      border-radius: 12px;
+      margin-top: 10px;
+      white-space: pre-wrap;
+      line-height: 1.6;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+
+    a.button {
+      display: block;
+      width: max-content;
+      margin: 40px auto 0;
+      padding: 12px 30px;
+      font-size: 1rem;
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    a.button:hover {
+      background: #1a252f;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8em; }
+      .container { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 StartupGPT Results</h1>
+
+    <h2>💡 Your Idea</h2>
+    <pre>{{ idea }}</pre>
+
+    <h2>✨ Refined Idea</h2>
+    <pre>{{ refined }}</pre>
+
+    <h2>📊 Pitch Deck Structure</h2>
+    <pre>{{ pitch }}</pre>
+
+    <h2>💸 Revenue Model</h2>
+    <pre>{{ revenue }}</pre>
+
+    <h2>📈 Valuation Analysis</h2>
+    <pre>{{ valuation }}</pre>
+
+    <h2>📘 Detailed Information</h2>
+    <pre>{{ details }}</pre>
+
+    <a href="/" class="button">🔁 Try Another Idea</a>
+  </div>
+</body>
+</html>
